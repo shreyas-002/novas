@@ -222,3 +222,22 @@ p {
 [data-theme="dark"] .confidence-bar {
   background: rgba(255, 255, 255, 0.2);
 }
+.nav-links button {
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.25s ease, border 0.25s ease;
+}
+
+.nav-links button:hover {
+  background: rgba(15, 118, 110, 0.08);
+  border: 1px solid rgba(15, 118, 110, 0.25);
+}
+
+[data-theme="dark"] .nav-links button:hover {
+  background: rgba(45, 212, 191, 0.12);
+  border: 1px solid rgba(45, 212, 191, 0.3);
+}
