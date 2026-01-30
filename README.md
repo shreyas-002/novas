@@ -1,4 +1,4 @@
-Novas Build Fest
+Novus Build Fest
 
 ---
 
