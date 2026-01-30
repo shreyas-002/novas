@@ -1,4 +1,101 @@
 :root {
+  --brand-primary: #0f766e;
+  --brand-accent: #22d3ee;
+
+  --bg-main: #f0f9f9;
+  --bg-card: #ffffff;
+  --bg-soft: #e6f6f5;
+
+  --text-main: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+
+  --safe: #22c55e;
+  --caution: #f59e0b;
+  --unsafe: #ef4444;
+
+  --border-light: #d1fae5;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-main);
+  color: var(--text-main);
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.navbar {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border-light);
+}
+
+.nav-logo {
+  color: var(--brand-primary);
+}
+
+.nav-search {
+  background: var(--bg-soft);
+  border: 1px solid var(--border-light);
+  color: var(--text-main);
+}
+
+.nav-center select {
+  background: var(--bg-soft);
+  border: 1px solid var(--border-light);
+  color: var(--text-main);
+}
+
+.nav-links button {
+  color: var(--text-main);
+}
+
+.nav-links button:hover {
+  background: rgba(15, 118, 110, 0.08);
+  border-radius: 999px;
+}
+
+.container {
+  background: transparent;
+}
+
+.status-card {
+  background: var(--bg-card);
+}
+
+.status-card.safe {
+  border-left: 6px solid var(--safe);
+}
+
+.status-card.caution {
+  border-left: 6px solid var(--caution);
+}
+
+.status-card.unsafe {
+  border-left: 6px solid var(--unsafe);
+}
+
+.confidence-wrapper,
+.window-card,
+.sea-details {
+  background: var(--bg-card);
+}
+
+.confidence-fill {
+  background: linear-gradient(90deg, var(--brand-primary), var(--brand-accent));
+}
+
+h1,
+h2,
+h3 {
+  color: var(--text-main);
+}
+
+p {
+  color: var(--text-secondary);
+}
+:root {
   --bg: #f5fbfa;
   --card: #ffffff;
   --text: #0f172a;
